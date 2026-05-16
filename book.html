@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Lesson | Kokule Driving Academy</title>
+    <link rel="stylesheet" href="drive-style.css">
+</head>
+<body>
+
+    <div id="container">
+        <header class="header-banner">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Kokule Academy Logo" class="logo-image">
+                <div class="logo-text">KUKULE<span>DRIVE</span></div>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="packages.html">Packages & Rates</a>
+                <a href="book.html" class="active">Book Lesson</a>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Reserve Your <span>Training Slot</span></h1>
+            <p>Ready to get your license? Fill out your information block below, select your code tier configuration, and our booking desk will follow up immediately.</p>
+
+            <form class="booking-form" action="#" method="POST" onsubmit="alert('Kokule Academy Booking Request Received! Our dispatch office will contact you via mobile shortly.'); return false;">
+                <div class="form-group">
+                    <label for="student-name">Full Name:</label>
+                    <input type="text" id="student-name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="student-phone">Contact Mobile Number:</label>
+                    <input type="tel" id="student-phone" placeholder="e.g. 0817816562" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="package-select">Select Lesson Tier Structure:</label>
+                    <select id="package-select" required>
+                        <option value="">-- Choose Options From Flyer --</option>
+                        <optgroup label="Code B Standard">
+                            <option value="b-1">Code B - 1 Hour (N$ 160)</option>
+                            <option value="b-5">Code B - 5 Hours (N$ 750)</option>
+                            <option value="b-10">Code B - 10 Hours (N$ 1,500)</option>
+                            <option value="b-20">Code B - 20 Hours (N$ 2,600)</option>
+                        </optgroup>
+                        <optgroup label="Code B Student Concessions">
+                            <option value="bs-5">Student Special - 5 Hours (N$ 650)</option>
+                            <option value="bs-10">Student Special - 10 Hours (N$ 1,300)</option>
+                            <option value="bs-20">Student Special - 20 Hours (N$ 2,300)</option>
+                        </optgroup>
+                        <optgroup label="Code C1 Heavy Vehicle">
+                            <option value="c-1">Code C1 - 1 Hour (N$ 250)</option>
+                            <option value="c-5">Code C1 - 5 Hours (N$ 1,100)</option>
+                            <option value="c-10">Code C1 - 10 Hours (N$ 2,400)</option>
+                            <option value="c-20">Code C1 - 20 Hours (N$ 3,500)</option>
+                        </optgroup>
+                        <optgroup label="NaTIS Unlimited Packages">
+                            <option value="unl-b">Code B Unlimited (N$ 4,500)</option>
+                            <option value="unl-c1">Code C1 Unlimited (N$ 5,500)</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="start-date">Target Registration Date:</label>
+                    <input type="date" id="start-date" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Booking Registration</button>
+            </form>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Kokule Driving Academy | Multimedia Web Systems Assignment</p>
+        </footer>
+    </div>
+
+</body>
+</html>
